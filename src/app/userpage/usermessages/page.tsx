@@ -225,7 +225,7 @@ export default function MessengerPage(): JSX.Element {
           </div>
 
           <HomeIcon
-            onClick={() => router.replace("/userpage")}
+            onClick={() =>{ router.replace("/userpage")}}
             className="h-6 w-6 hover:text-blue-800 active:text-blue-900 cursor-pointer text-blue-600"
           />
         </div>

@@ -19,10 +19,14 @@ export default function RootLayout({
         setLogedIn(true)
         
         router.replace('/userpage')
+        console.log('true');
+        
       }
       else {
         setLogedIn(false)
         router.replace('/')
+        console.log('false');
+        
       }
     },[pathName])
    
