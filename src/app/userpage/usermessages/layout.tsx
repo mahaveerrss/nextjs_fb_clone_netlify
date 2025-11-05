@@ -14,21 +14,21 @@ export default function RootLayout({
     const router = useRouter()
     const [logedIn , setLogedIn] = useState(false)
     useEffect(()=>{
-        if(pathName === '/userpage/usermessages'){
+      console.log(pathName);
+      
+         
                 const isUserLogedIn = localStorage.getItem('fbCloneVal') ?? '';
       if(isUserLogedIn.length > 0 && JSON.parse(isUserLogedIn)){
         setLogedIn(true)
         
-        router.replace('/userpage/usermessages')
+      
       }
       else {
         setLogedIn(false)
         router.replace('/')
       }
-        }
-        return ()=> {
-          
-        }
+        
+        
 
     },[pathName])
    
