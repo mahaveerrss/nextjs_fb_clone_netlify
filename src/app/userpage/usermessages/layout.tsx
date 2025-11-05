@@ -29,7 +29,7 @@ export default function RootLayout({
 
   return <>
   {
-    logedIn ?  {children}  : ''
+    logedIn ?  children  : ''
   }
   </>;
 }
