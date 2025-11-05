@@ -59,11 +59,7 @@ export default function MessengerPage(): JSX.Element {
       console.log("socket open");
       setSocket(ws);
     };
-
-    ws.onclose = () => {
-      console.log("socket closed");
-      setSocket(null);
-    };
+ 
 
     return () => {
       ws.close();
@@ -225,7 +221,8 @@ export default function MessengerPage(): JSX.Element {
           </div>
 
           <HomeIcon
-            onClick={() =>{ router.replace("/userpage")}}
+            onClick={() =>{ router.replace("/userpage") ,console.log('replaced');
+             }}
             className="h-6 w-6 hover:text-blue-800 active:text-blue-900 cursor-pointer text-blue-600"
           />
         </div>
