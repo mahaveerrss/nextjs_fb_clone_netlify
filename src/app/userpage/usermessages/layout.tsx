@@ -15,7 +15,7 @@ export default function RootLayout({
     const [logedIn , setLogedIn] = useState(false)
     useEffect(()=>{
       const isUserLogedIn = localStorage.getItem('fbCloneVal') ?? '';
-      if(isUserLogedIn.length >0 && JSON.parse(isUserLogedIn)){
+      if(isUserLogedIn.length > 0 && JSON.parse(isUserLogedIn)){
         setLogedIn(true)
         
         router.replace('/userpage/usermessages')
@@ -29,7 +29,7 @@ export default function RootLayout({
 
   return <>
   {
-    logedIn ?  children  : ''
+    logedIn ?  {children}  : ''
   }
   </>;
 }
