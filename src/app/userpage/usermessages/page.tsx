@@ -58,7 +58,7 @@ export default function MessengerPage() {
 
     return () => {
       setSocket(null)
-      socket.close();}
+      socket?.close();}
   }, []);
 
   useEffect(() => {
