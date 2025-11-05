@@ -122,7 +122,7 @@ export default function MessengerPage(): JSX.Element {
         className={`${
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
         } md:translate-x-0 transition-transform duration-300 ease-in-out
-        fixed md:static z-40 top-0 left-0 h-full w-72 sm:w-80 flex-shrink-0 border-r border-gray-700
+        fixed md:static z-40 top-0 left-0 h-full w-72 sm:w-80 shrink-0 border-r border-gray-700
         ${dark ? "bg-slate-900 text-white" : "bg-white text-black"}`}
       >
         <div className="p-4 border-b border-gray-700 flex justify-between items-center">
